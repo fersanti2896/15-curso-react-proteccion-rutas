@@ -5,7 +5,7 @@ En esta sección se valida las bases de la autenticación y protección de las r
 
 - Rutas públicas.
 - Rutas privadas.
-- Login y logout - Sin backend aún
+- Login y logout - Sin backend aún.
 - Recordar cuál fue la última ruta visitada para mejorar la experiencia de usuario.
 - Uso del `Context`.
 - Uso del `Reducer`.
