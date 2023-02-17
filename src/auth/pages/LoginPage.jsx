@@ -1,9 +1,14 @@
+import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { AuthContext } from '../context';
 
 export const LoginPage = () => {
+    const { login } = useContext( AuthContext );
     const navigate = useNavigate();
 
     const onLogin = () => {
+        login('Fer Santi');
+
         navigate('/', {
             replace: true
         });
@@ -15,7 +20,6 @@ export const LoginPage = () => {
                 <h1>Login Page</h1>
                 <hr/>
             
-
                 <button className="btn btn-outline-success"
                         onClick={ onLogin }>
                     Login
